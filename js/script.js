@@ -70,14 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const name = this.querySelector('input[name="name"]').value;
-            const email = this.querySelector('input[name="email"]').value;
-            const subject = this.querySelector('input[name="subject"]').value;
-            const message = this.querySelector('textarea[name="message"]').value;
+            const name = document.getElementById('contactName').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
             
-            // Simulate sending
-            console.log('Message:', { name, email, subject, message });
-            alert(`[ MESSAGE RECEIVED ]\n\nThank you, ${name}!\nWe'll get back to you soon.\n\n❤️ Pixel love!`);
+            // Create mailto link
+            const mailtoLink = `mailto:nvlinh0607@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + '\n\n' + message)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Reset form after a short delay
+            setTimeout(() => {
+                this.reset();
+            }, 500);
             
             this.reset();
         });
