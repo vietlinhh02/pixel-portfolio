@@ -1,0 +1,176 @@
+# 🚀 QUICK START — Pixel Portfolio 2D
+
+## 📂 Tệp Được Tạo
+
+```
+pixel-portfolio/
+├── index.html              ← Mở file này trong browser
+├── css/style.css           ← Toàn bộ styling (pixel-perfect)
+├── js/script.js            ← Interactive features
+├── assets/images/          ← Thư mục cho ảnh của bạn
+├── README.md               ← Hướng dẫn đầy đủ
+├── DEVELOPMENT.md          ← Ý tưởng nâng cấp
+└── .gitignore             ← Config git
+
+Địa chỉ: c:\Users\peanu\OneDrive\Máy tính\learn\chaper2\pixel-portfolio\
+```
+
+---
+
+## 🎮 MỞ NGAY
+
+### Cách 1: Mở trực tiếp (nhanh nhất)
+1. Vào thư mục: `c:\Users\peanu\OneDrive\Máy tính\learn\chaper2\pixel-portfolio`
+2. Double-click `index.html`
+3. Trang web mở trong browser
+
+### Cách 2: Dùng Server (tốt hơn)
+```powershell
+cd "c:\Users\peanu\OneDrive\Máy tính\learn\chaper2\pixel-portfolio"
+python -m http.server 8000
+```
+Rồi vào: `http://localhost:8000`
+
+---
+
+## ✏️ TÙYCHỈNH NGAY
+
+### 1️⃣ Đổi Tên & Tagline
+File: `index.html` (dòng ~28)
+```html
+<h1 class="title">YOUR NAME HERE</h1>
+<p class="tagline">Your awesome tagline</p>
+```
+
+### 2️⃣ Đổi Màu
+File: `css/style.css` (dòng 6-13)
+```css
+:root {
+    --primary: #0b3d91;      /* Đổi màu tại đây */
+    --accent: #ffd700;
+    /* ... etc */
+}
+```
+
+### 3️⃣ Cập Nhật Projects
+File: `js/script.js` (dòng 5-67) — sửa `projectsData` array:
+```javascript
+{
+    title: "Your Project",
+    icon: "🎨",
+    description: "Your description",
+    fullDesc: `<p>Detailed info...</p>`,
+    tags: ["Tech1", "Tech2"]
+}
+```
+
+### 4️⃣ Cập Nhật About & Skills
+File: `index.html` (dòng ~220-260)
+
+### 5️⃣ Cập Nhật Social Links
+File: `index.html` (dòng ~330-340)
+
+---
+
+## 📱 FEATURES
+
+✅ **4 Sections**: Home, Projects, About, Contact
+✅ **Fully Responsive**: Desktop, tablet, mobile
+✅ **Pixel-Perfect Design**: Retro 8-bit aesthetic
+✅ **No Build Tools**: Pure HTML/CSS/JS
+✅ **Animations**: Floating avatar, hover effects, smooth transitions
+✅ **Keyboard Nav**: Press 1-4 để jump giữa sections
+✅ **Contact Form**: Tích hợp sẵn (có thể kết nối backend sau)
+✅ **Project Modals**: Click detail → xem chi tiết
+
+---
+
+## 🎨 TIẾP THEO (Suggestions)
+
+### Dễ (30 min - 1 tiếng):
+- [ ] Thêm avatar pixel 64×64 của bạn
+- [ ] Viết nội dung thực tế
+- [ ] Đổi màu/font theo sở thích
+
+### Vừa (1-4 tiếng):
+- [ ] Tạo pixel thumbnails cho projects
+- [ ] Thêm color scheme toggle
+- [ ] Kết nối email form (Formspree/Netlify)
+
+### Nâng Cao (4+ tiếng):
+- [ ] Thêm mini-game ở hero
+- [ ] Sprite animation (blink, walk)
+- [ ] Parallax background effect
+
+Xem `DEVELOPMENT.md` để có hơn 20+ ý tưởng!
+
+---
+
+## 🌐 DEPLOY
+
+### Netlify (Dễ nhất)
+1. Drag & drop thư mục vào netlify.com
+2. Xong! URL tự động
+
+### GitHub Pages
+1. Push lên GitHub
+2. Enable Pages trong repo settings
+3. Xong!
+
+### Vercel
+1. Connect GitHub hoặc upload folder
+2. Auto-deploy mỗi lần push
+3. Xong!
+
+---
+
+## 🐛 TROUBLESHOOT
+
+**Ảnh bị mờ?**
+→ Đã thêm `image-rendering: pixelated` trong CSS
+
+**Font không load?**
+→ Kiểm tra internet connection (dùng Press Start 2P từ Google Fonts)
+
+**Mobile layout lỗi?**
+→ Test trên Chrome DevTools (F12) → device toolbar
+
+**Form không gửi?**
+→ Bình thường (alert hiện thị thôi). Kết nối backend sau.
+
+---
+
+## 📚 TÀI LIỆU
+
+- **README.md** — Full documentation
+- **DEVELOPMENT.md** — 20+ ideas để nâng cấp
+- **js/script.js** — Code có comment giải thích
+
+---
+
+## 🎮 PHÍM TẮT
+
+| Phím | Chức năng |
+|------|----------|
+| `1` | Jump to Home |
+| `2` | Jump to Projects |
+| `3` | Jump to About |
+| `4` | Jump to Contact |
+| `Esc` | Close modal |
+
+---
+
+## ✨ Enjoy! 🎮
+
+Trang web của bạn sẵn sàng!
+
+**Bước tiếp theo:**
+1. ✓ Mở index.html (hoặc http://localhost:8000)
+2. ✓ Xem xet layout & animations
+3. ✓ Đổi nội dung theo bạn
+4. ✓ Thêm projects thực tế
+5. ✓ Deploy lên Netlify/GitHub Pages
+
+**Có câu hỏi?** Check README.md hoặc code comments!
+
+Made with ❤️ and pixels 🎮

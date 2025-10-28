@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.Pixel | Portfolio 🎮</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/decorations.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scanline effect overlay -->
+    <div class="scanline"></div>
+    
+    <!-- Twinkling stars -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header / Navigation -->
+        <header class="header">
+            <nav class="nav">
+                <a href="#home" class="nav-link" onclick="smoothScroll(event, 'hero')">[ HOME ]</a>
+                <a href="#projects" class="nav-link" onclick="smoothScroll(event, 'projects')">[ PROJECTS ]</a>
+                <a href="#about" class="nav-link" onclick="smoothScroll(event, 'about')">[ ABOUT ]</a>
+                <a href="#stats" class="nav-link" onclick="smoothScroll(event, 'stats')">[ STATS ]</a>
+                <a href="#contact" class="nav-link" onclick="smoothScroll(event, 'contact')">[ CONTACT ]</a>
+                <button type="button" class="nav-link" id="themeToggle" title="Switch theme">[ THEME ]</button>
+            </nav>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero">
+            <div class="corner-ornament top-left"></div>
+            <div class="corner-ornament top-right"></div>
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img class="avatar-img" src="assets/images/572231809_837140795667469_5373646706563057394_n.jpg" alt="Viet Linh portrait" />
+                </div>
+                <div class="hero-text">
+                    <h1 class="title">VIET LINH</h1>
+                    <p class="tagline">Developer | Pixel Artist | Tech Enthusiast</p>
+                    <p class="description">Exploring new technologies and developing software solutions with code and pixels. Passionate about JavaScript, AI, Graphic Design, and creative digital experiences.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="smoothScroll(event, 'projects')">[ VIEW WORK ]</button>
+                        <button class="btn btn-secondary" onclick="smoothScroll(event, 'contact')">[ GET IN TOUCH ]</button>
+                        <a href="NguyenVietLinhCV.pdf" download class="btn btn-primary">[ DOWNLOAD CV ]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="45">0</div>
+                    <p class="stat-label">Repositories</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <p class="stat-label">Yrs Experience</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="370">0</div>
+                    <p class="stat-label">Contributions</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <p class="stat-label">Skills</p>
+                </div>
+            </div>
+            <div class="corner-ornament bottom-left"></div>
+            <div class="corner-ornament bottom-right"></div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <h2 class="section-title">[ FEATURED PROJECTS ]</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Gemini API -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-1.svg" alt="Gemini API UI" />
+                    </div>
+                    <h3>Gemini API UI</h3>
+                    <p>Minimal web UI for GeminiPro API with clean interface</p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/gemini-api" class="link-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Bitterr -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-2.svg" alt="Bitterr" />
+                    </div>
+                    <h3>Bitterr</h3>
+                    <p>Scientific research platform about medicine & AI model training</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Data Science</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/bitterr" class="link-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Pharmacity Scraper -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-3.svg" alt="Pharmacity Scraper" />
+                    </div>
+                    <h3>Pharmacity Scraper</h3>
+                    <p>Web scraper tool for medicine data & YOLO model training support</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Scraping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/pharmacity-scraper" class="link-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: MediaVerse MVP -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-4.svg" alt="MediaVerse MVP Core" />
+                    </div>
+                    <h3>MediaVerse MVP Core</h3>
+                    <p>Core backend system for media platform with 39+ commits</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/mediaverse-mvp-core" class="link-btn" target="_blank">GitHub</a>
+                        <a href="#" class="link-btn">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: TravelSense -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-5.svg" alt="TravelSense" />
+                    </div>
+                    <h3>TravelSense</h3>
+                    <p>Travel guide platform with location-based recommendations</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Maps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/travelsense" class="link-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Website -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="assets/svg/mock-proj-6.svg" alt="Personal Website" />
+                    </div>
+                    <h3>Personal Website</h3>
+                    <p>Portfolio & blog showcasing projects and technical articles</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Blog</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vietlinhh02/website" class="link-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <h2 class="section-title">[ ABOUT ME ]</h2>
+            <div class="about-grid">
+                <div class="about-bio">
+                    <h3>Who Am I?</h3>
+                    <p>I'm Viet Linh, a developer exploring new technologies and developing software solutions with code and creativity. Currently studying Multimedia and Technology at Hanoi University of Industry while working as CEO at đắng. studio.</p>
+                    <h4>What I Do:</h4>
+                    <ul class="interests-list">
+                        <li>✦ Exploring new technologies</li>
+                        <li>✦ Developing software solutions</li>
+                        <li>✦ Learning JavaScript & AI</li>
+                        <li>✦ Graphic Design & Illustration</li>
+                        <li>✦ Blog writing & content creation</li>
+                        <li>✦ Open-source projects</li>
+                    </ul>
+                </div>
+
+                <div class="skills-box">
+                    <h3>Tech Stack</h3>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>HTML5 & CSS3</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Databases (MySQL, MongoDB)</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Design Tools</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                    </div>
+                </div>
+
+                <div class="timeline-box">
+                    <h3>Journey</h3>
+                    <div class="timeline-item">
+                        <span class="year">2025</span>
+                        <h4>CEO at đắng. studio</h4>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <h4>45+ Open Projects</h4>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2023</span>
+                        <h4>Learning AI & ML</h4>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2022</span>
+                        <h4>Started Web Development</h4>
+                    </div>
+                </div>
+
+                <div class="achievements-box">
+                    <h3>Achievements</h3>
+                    <div class="achievement">★ 100+ Projects Delivered</div>
+                    <div class="achievement">★ 50+ Happy Clients</div>
+                    <div class="achievement">★ Open Source Contributor</div>
+                    <div class="achievement">★ Tech Speaker & Mentor</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section id="stats" class="section">
+            <h2 class="section-title">[ BY THE NUMBERS ]</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num">8+</div>
+                    <p>Years in Industry</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">150+</div>
+                    <p>Projects Built</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">50+</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">100%</div>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <h2 class="section-title">[ GET IN TOUCH ]</h2>
+            <div class="contact-grid">
+                <div class="contact-info-box">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in collaborating? Have a project or just want to discuss technology? Feel free to reach out!</p>
+                    
+                    <div class="info-items">
+                        <div class="info-row">
+                            <strong>Email:</strong>
+                            <a href="mailto:nvlinh0607@gmail.com">nvlinh0607@gmail.com</a>
+                        </div>
+                        <div class="info-row">
+                            <strong>Location:</strong>
+                            Hanoi, Vietnam 🏠
+                        </div>
+                        <div class="info-row">
+                            <strong>Status:</strong>
+                            <span class="available">✦ Working on Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="socials-box">
+                        <h4>Social Links</h4>
+                        <div class="social-buttons">
+                            <a href="https://github.com/vietlinhh02" target="_blank">[ GITHUB ]</a>
+                            <a href="https://instagram.com/vietlinhlinh._/" target="_blank">[ INSTAGRAM ]</a>
+                            <a href="https://facebook.com/eddiesngu/" target="_blank">[ FACEBOOK ]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject:</label>
+                        <input type="text" name="subject" required placeholder="Project topic">
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">[ SEND MESSAGE ]</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Dev.Pixel | Crafted with ❤️ and pixels 🎮</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Grass tile -->
+    <pattern id="grass-tile" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="16" height="16" fill="#2d5016"/>
+      <!-- Grass texture -->
+      <rect x="2" y="2" width="2" height="2" fill="#3d6b1f"/>
+      <rect x="8" y="4" width="2" height="2" fill="#3d6b1f"/>
+      <rect x="12" y="3" width="2" height="2" fill="#3d6b1f"/>
+      <rect x="4" y="10" width="2" height="2" fill="#3d6b1f"/>
+      <rect x="10" y="12" width="2" height="2" fill="#3d6b1f"/>
+    </pattern>
+  </defs>
+  
+  <rect width="64" height="64" fill="url(#grass-tile)"/>
+</svg>

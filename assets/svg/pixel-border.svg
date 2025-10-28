@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 16">
+  <!-- Pixel border pattern -->
+  <defs>
+    <pattern id="border-pattern" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="8" height="8" fill="#0b3d91" opacity="0.6"/>
+      <rect x="8" y="0" width="8" height="8" fill="#08a4de" opacity="0.6"/>
+      <rect x="0" y="8" width="8" height="8" fill="#08a4de" opacity="0.6"/>
+      <rect x="8" y="8" width="8" height="8" fill="#0b3d91" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Top border -->
+  <rect x="0" y="0" width="1200" height="16" fill="url(#border-pattern)"/>
+  
+  <!-- Corner decorations -->
+  <rect x="0" y="0" width="4" height="4" fill="#ffd700"/>
+  <rect x="1196" y="0" width="4" height="4" fill="#ffd700"/>
+</svg>
