@@ -1,5 +1,13 @@
 /* ===== PIXEL PORTFOLIO - SINGLE PAGE STYLES ===== */
 
+/* Font FVF Fernando - Vietnamese pixel font for content */
+@font-face {
+    font-family: 'FVF Fernando';
+    src: url('../assets/font/FVF Fernando 08.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -81,12 +89,12 @@ body[data-theme="forest"] {
 }
 
 body {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'FVF Fernando', monospace;
     background: linear-gradient(135deg, var(--light) 0%, #ffffff 100%);
     background-attachment: fixed;
     color: var(--dark);
-    line-height: 1.6;
-    font-size: 11px;
+    line-height: 1.8;
+    font-size: 12px;
     position: relative;
 }
 
@@ -304,6 +312,7 @@ img, svg {
 }
 
 .section-title {
+    font-family: 'Press Start 2P', monospace;
     font-size: 22px;
     text-align: center;
     margin-bottom: 40px;
@@ -403,6 +412,7 @@ img, svg {
 }
 
 .title {
+    font-family: 'Press Start 2P', monospace;
     font-size: 36px;
     color: var(--primary);
     margin-bottom: 12px;
@@ -430,13 +440,15 @@ img, svg {
 
 .btn {
     font-family: 'Press Start 2P', monospace;
-    font-size: 11px;
+    font-size: 10px;
     padding: 12px 20px;
     border: 2px solid var(--primary);
     cursor: pointer;
     transition: all 0.1s;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary {
@@ -554,7 +566,8 @@ img, svg {
 }
 
 .project-card h3 {
-    font-size: 13px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
     color: var(--primary);
     margin-bottom: 10px;
 }
@@ -567,6 +580,7 @@ img, svg {
 }
 
 .project-tags {
+    margin-top: 5px;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -595,7 +609,7 @@ img, svg {
 }
 
 .link-btn {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'FVF Fernando', monospace;
     font-size: 9px;
     padding: 6px 10px;
     background: transparent;
@@ -630,9 +644,12 @@ img, svg {
 
 .about-bio h3,
 .skills-box h3,
+.about-bio h3,
+.skills-box h3,
 .timeline-box h3,
 .achievements-box h3 {
-    font-size: 14px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 13px;
     color: var(--primary);
     margin-bottom: 16px;
 }
@@ -717,7 +734,8 @@ img, svg {
 }
 
 .stat-num {
-    font-size: 32px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 28px;
     color: var(--primary);
     font-weight: bold;
     margin-bottom: 12px;
@@ -746,7 +764,8 @@ img, svg {
 }
 
 .contact-info-box h3 {
-    font-size: 14px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 13px;
     color: var(--primary);
     margin-bottom: 16px;
 }
@@ -801,7 +820,7 @@ img, svg {
 
 .social-buttons a {
     display: inline-block;
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'FVF Fernando', monospace;
     font-size: 10px;
     padding: 8px;
     background: var(--accent);
@@ -839,7 +858,7 @@ img, svg {
 
 .form-group input,
 .form-group textarea {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'FVF Fernando', monospace;
     font-size: 10px;
     padding: 8px;
     background: #ffffff;
